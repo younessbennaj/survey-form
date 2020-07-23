@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="title">Survey form</h1>
+        <p id="description">
+            This is a instance of survey form built with HTML and CSS.
+        </p>
+        <hr>
+    </header>
+    <main>
+        <form action="" id="survey-form">
+            <!-- Name Input -->
+            <label for="name">What's your name?</label>
+            <input type="text" name="name" id="name" required placeholder="Enter your name">
+            <!-- Email Input -->
+            <label for="email">What's your email address?</label>
+            <input type="email" name="email" id="email" required placeholder="Enter your email">
+            <!-- Age input -->
+            <label for="age">How old are you?</label>
+            <input type="number" name="age" id="age" min="15" max="100" placeholder="Enter your age">
+            <!-- Dropdown input -->
+            <label for="dropdown">What's your operating system?</label>
+            <select name="operating-system" id="dropdown">
+                <option value="" disabled selected>--Select an option--</option>
+                <option value="win10">Win10</option>
+                <option value="win8">Win8</option>
+                <option value="win7">Win7</option>
+                <option value="mac">MacOS</option>
+                <option value="linux">Linux</option>
+            </select>
+            <!-- Radio buttons -->
+            <fieldset>
+                <legend>Choose your favorite JS frameworks/libraries:</legend>
+
+                <input type="radio" name="framework" id="react">
+                <label for="react">React</label>
+
+                <input type="radio" name="framework" id="angular-js">
+                <label for="angular-js">AngularJS</label>
+
+                <input type="radio" name="framework" id="angular">
+                <label for="angular">Angular</label>
+
+                <input type="radio" name="framework" id="angular">
+                <label for="react">Vue.js</label>
+
+                <input type="radio" name="framework" id="backbone">
+                <label for="backbone">Backbone.js</label>
+            </fieldset>
+            <fieldset>
+                <legend>Which languages/technologies do you master?</legend>
+
+                <input type="checkbox" value="technology" name="html" id="html">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" value="technology" name="css" id="css">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" value="technology" name="js" id="js">
+                <label for="js">JS</label>
+
+                <input type="checkbox" value="technology" name="jquery" id="jquery">
+                <label for="jquery">jQuery</label>
+
+                <input type="checkbox" value="technology" name="gulp" id="gulp">
+                <label for="gulp">Gulp</label>
+
+                <input type="checkbox" value="technology" name="sass" id="sass">
+                <label for="sass">Sass</label>
+
+                <input type="checkbox" value="technology" name="nodejs" id="nodejs">
+                <label for="nodejs">NodeJS</label>
+
+                <input type="checkbox" value="technology" name="babel" id="babel">
+                <label for="babel">Babel</label>
+
+                <input type="checkbox" value="technology" name="webpack" id="webpack">
+                <label for="webpack">Webpack</label>
+            </fieldset>
+            <!-- Comment -->
+            <label for="comment">Do you have any comment?</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            <!-- Submit -->
+            <input type="submit" value="Submit form">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

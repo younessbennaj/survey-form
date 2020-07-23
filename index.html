@@ -11,25 +11,26 @@
 
 <body>
     <header class="header">
-        <h1 id="title">Survey form</h1>
-        <p id="description">
+
+    </header>
+    <main class="survey">
+        <h1 class="survey__title">Survey form</h1>
+        <p class="survey__description">
             This is a instance of survey form built with HTML and CSS.
         </p>
         <hr>
-    </header>
-    <main>
-        <form action="" id="survey-form">
+        <form action="" class="survey__form">
             <!-- Name Input -->
-            <label for="name">What's your name?</label>
-            <input type="text" name="name" id="name" required placeholder="Enter your name">
+            <label class="survey__label" for="name">What's your name?</label>
+            <input class="survey__input" type="text" name="name" id="name" required placeholder="Enter your name">
             <!-- Email Input -->
-            <label for="email">What's your email address?</label>
-            <input type="email" name="email" id="email" required placeholder="Enter your email">
+            <label class="survey__label" for="email">What's your email address?</label>
+            <input class="survey__input" type="email" name="email" id="email" required placeholder="Enter your email">
             <!-- Age input -->
-            <label for="age">How old are you?</label>
-            <input type="number" name="age" id="age" min="15" max="100" placeholder="Enter your age">
+            <label class="survey__label" for="age">How old are you?</label>
+            <input class="survey__input" type="number" name="age" id="age" min="15" max="100" placeholder="Enter your age">
             <!-- Dropdown input -->
-            <label for="dropdown">What's your operating system?</label>
+            <label class="survey__label" for="dropdown">What's your operating system?</label>
             <select name="operating-system" id="dropdown">
                 <option value="" disabled selected>--Select an option--</option>
                 <option value="win10">Win10</option>

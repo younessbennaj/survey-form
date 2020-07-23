@@ -14,7 +14,7 @@ body {
 
 .survey__input {
     display: block;
-    width: 100%;
+    width: 50%;
     height: 3em;
     box-sizing: border-box;
     font-size: 1em;
@@ -28,6 +28,54 @@ body {
     /* background: aliceblue; */
     padding: 10px 0px;
     display: inline-block;
+    font-size: 1rem;
+}
+
+.survey__label--radio {
+    display: block;
+    padding: 5px;
+    padding-left: 0px;
+}
+
+.survey__label--checkbox {
+    display: block;
+    padding: 5px;
+    padding-left: 0px;
+}
+
+.survey__textarea {
+    display: block;
+    width: 50%;
+    margin-bottom: 2em;
+}
+
+.survey__button {
+    height: 2.2em;
+    font-size: 0.9em;
+    margin-bottom: 2em;
+    background-color: lightgray;
+    border: 1px solid darkgray;
+    border-radius: 2px;
+}
+
+.survey__select {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    display: block;
+    width: 50%;
+    height: 2.4em;
+    box-sizing: border-box;
+    padding-left: 5px;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+    margin-bottom: 0.6em;
+}
+
+/* Reset default style of fieldset */
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 0.6em;
 }
 
 .header {
@@ -35,7 +83,7 @@ body {
     background-image: url('/img/header-400.jpg');
     background-origin: border-box;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
 @media screen and (max-width: 480px) {
@@ -43,5 +91,17 @@ body {
         background-image: url('/img/header-close-portrait.jpg');
         background-position-y: -8em;
         height: 200px;
+    }
+
+    .survey__input {
+        width: 100%;
+    }
+
+    .survey__select {
+        width: 100%;
+    }
+
+    .survey__textarea {
+        width: 100%;
     }
 }
